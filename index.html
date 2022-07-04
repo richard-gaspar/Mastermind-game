@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastermind game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flex grid">
+      <div class="table">
+        <div class="left-side"></div>
+        <div class="right-side"></div>
+        <div class="color-pick-box">
+          <div class="colors red"></div>
+          <div class="colors orange"></div>
+          <div class="colors yellow"></div>
+          <div class="colors green"></div>
+          <div class="colors cyan"></div>
+          <div class="colors blue"></div>
+          <div class="colors purple"></div>
+          <div class="colors black"></div>
+        </div>
+      </div>
+      <div class="controller-box flexbox">
+        <div class="game-rules hidden">
+          <div>
+            <div class="close-btn">x</div>
+            <!-- <h2>MasterMind game rules</h2>
+            <p>
+              The computer has selected a secret combination of 4 colored
+              circles and you have to guess that combination in 10 or fewer
+              tries to win.
+            </p>
+            <h3>How to play . . .</h3>
+            <p>
+              To create your guess click each apparent colored circle until
+              you've filled the row with your combination (you can delete your
+              guess by clicking "delete" button). Then click the "check my
+              guess" button. Each time you submit a guess the machine will use
+              score circles to let you know how close that guess is. For each
+              guess a black score circle indicates that one of your circle is
+              the right color in the right position. A white score circle
+              indicates that one of your circles is the right color in the wrong
+              position. Use the score to guide your next guess. If your guess
+              scores 4 black score cirlces within 10 tries, you win. To begin a
+              new game click the "new game" button. Good luck!
+            </p> -->
+          </div>
+        </div>
+
+        <button class="btn">New game</button>
+        <button class="btn">Save game</button>
+        <button class="btn game-rules-btn">Game rules</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
