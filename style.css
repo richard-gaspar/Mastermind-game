@@ -17,6 +17,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: end;
+  gap: 5rem;
 }
 
 .table {
@@ -121,11 +122,11 @@ body {
 }
 
 .controller-box {
-  justify-self: center;
+  justify-self: start;
   align-self: center;
   background-color: #822b09;
   width: 10rem;
-  height: 25rem;
+  height: 30rem;
 }
 
 .flexbox {
@@ -148,7 +149,6 @@ body {
   background-color: #adb5bd;
   padding: 2.5rem;
   border-radius: 5px;
-  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.3);
   z-index: 3;
 }
 
@@ -165,6 +165,21 @@ body {
 
 /* HELPER CLASSES */
 
+.btn {
+  border-radius: 5px;
+  padding: 0.6rem;
+  font-size: 1.8rem;
+  color: #0d0401;
+  background-color: #cdaa9d;
+  opacity: 70%;
+  transition: ease-in-out 0.5s;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.2);
+  opacity: 100%;
+}
+
 .hidden {
   display: none;
 }
@@ -178,4 +193,8 @@ body {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 2;
+}
+
+.box-shadow {
+  box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.6);
 }
