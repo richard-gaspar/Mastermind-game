@@ -49,33 +49,67 @@ body {
   height: 4rem;
   background-color: #ced4da;
   border-radius: 50%;
+  cursor: pointer;
 }
 
+.guess-dots {
+  width: 4rem;
+  height: 4rem;
+  background-color: #ced4da;
+  border-radius: 50%;
+}
 .red {
-  background-color: #c92a2a;
+  background-color: rgb(201, 42, 42);
 }
 
 .orange {
-  background-color: #f76707;
+  /* background-color: #f76707; */
+  background-color: rgb(247, 103, 7);
 }
 
 .yellow {
-  background-color: #ffd43b;
+  /* background-color: #ffd43b; */
+  background-color: rgb(255, 212, 59);
 }
 .green {
-  background-color: #94d82d;
+  /* background-color: #94d82d; */
+  background-color: rgb(148, 216, 45);
 }
 .blue {
-  background-color: #1864ab;
+  /* background-color: #1864ab; */
+  background-color: rgb(24, 100, 171);
 }
 .purple {
-  background-color: #7950f2;
+  /* background-color: #7950f2; */
+  background-color: rgb(121, 80, 242);
 }
 .cyan {
   background-color: #0b7285;
+  background-color: rgb(102, 217, 232);
 }
 .black {
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: rgb(0, 0, 0);
+}
+
+.delete-btn {
+  position: absolute;
+  bottom: -35%;
+  left: 28%;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 0.6rem;
+  font-size: 1.8rem;
+  color: #0d0401;
+  background-color: #cdaa9d;
+  transition: ease-in-out 0.5s;
+  opacity: 80%;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 100%;
 }
 
 .guess-box {
@@ -88,13 +122,6 @@ body {
   box-shadow: inset 0 0 0 0.1rem #160701;
   width: 21.75rem;
   gap: 1rem;
-}
-
-.guess-dots {
-  width: 4rem;
-  height: 4rem;
-  background-color: #ced4da;
-  border-radius: 50%;
 }
 
 .right-side {
@@ -137,21 +164,6 @@ body {
   gap: 2.5rem;
 }
 
-.btn {
-  font-size: 2rem;
-}
-
-.game-rules {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #adb5bd;
-  padding: 2.5rem;
-  border-radius: 5px;
-  z-index: 3;
-}
-
 .close-btn {
   position: absolute;
   top: 0.6rem;
@@ -163,9 +175,14 @@ body {
   background: none;
 }
 
+.current {
+  box-shadow: 0rem 0rem 0.6rem 0.5rem rgba(205, 170, 157, 0.6);
+}
+
 /* HELPER CLASSES */
 
 .btn {
+  font-size: 2rem;
   border-radius: 5px;
   padding: 0.6rem;
   font-size: 1.8rem;
@@ -197,4 +214,34 @@ body {
 
 .box-shadow {
   box-shadow: 0 1.5rem 2.5rem rgba(0, 0, 0, 0.6);
+}
+
+.active {
+  border: 2px solid black;
+}
+
+.bullseye {
+  background-color: #000000;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.6rem;
+  right: 1rem;
+  font-size: 2.5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #adb5bd;
+  padding: 2.5rem;
+  border-radius: 5px;
+  z-index: 3;
 }
