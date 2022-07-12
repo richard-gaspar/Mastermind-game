@@ -24,12 +24,6 @@
           <div class="colors black" data-color="rgb(0, 0, 0)"></div>
         </div>
         <button class="delete-btn">Delete color</button>
-        <div class="secret-colors-container">
-          <div class="secret-colors" id="secret-color-1"></div>
-          <div class="secret-colors" id="secret-color-2"></div>
-          <div class="secret-colors" id="secret-color-3"></div>
-          <div class="secret-colors" id="secret-color-4"></div>
-        </div>
       </div>
       <div class="controller-box flexbox box-shadow">
         <div class="game-rules modal hidden box-shadow">
@@ -39,7 +33,8 @@
             <p>
               The computer has selected a secret combination of 4 colored
               circles and you have to guess that combination in 10 or fewer
-              tries to win.
+              tries to win. Be aware: each color can be multiple times in the
+              combination!
             </p>
             <h3>How to play . . .</h3>
             <p>
@@ -50,10 +45,10 @@
               score circles to let you know how close that guess is. For each
               guess a black score circle indicates that one of your circle is
               the right color in the right position. A white score circle
-              indicates that one of your circles is the right color in the wrong
-              position. Use the score to guide your next guess. If your guess
-              scores 4 black score cirlces within 10 tries, you win. To begin a
-              new game click the "new game" button. Good luck!
+              indicates that one of your circles is the right color but in the
+              wrong position. Use the score to guide your next guess. If your
+              guess scores 4 black score cirlces within 10 tries, you win. To
+              begin a new game click the "New game" button. Good luck!
             </p>
           </div>
         </div>
@@ -67,7 +62,7 @@
         <div class="lose-modal modal hidden box-shadow">
           <div>
             <div class="close-lose-btn close-btn">x</div>
-            <p>I am sorry! You are too stupid for this game</p>
+            <p>You lost! Click the New game button and try again!</p>
           </div>
         </div>
 

@@ -15,12 +15,6 @@ const current = document.querySelector(".current");
 
 const overlay = document.querySelector(".overlay");
 
-// Select colors for clickevent
-const secretColor1 = document.getElementById("secret-color-1");
-const secretColor2 = document.getElementById("secret-color-2");
-const secretColor3 = document.getElementById("secret-color-3");
-const secretColor4 = document.getElementById("secret-color-4");
-
 // Game rules modal
 const closeModal = function () {
   gameRules.classList.add("hidden");
@@ -105,19 +99,19 @@ let secretColorArray = [];
 const shuffleColors = function () {
   secretColorArray.push(
     {
-      color: (secretColor1.id = colorsArray[Math.floor(Math.random() * 6)]),
+      color: colorsArray[Math.floor(Math.random() * 6)],
       found: false,
     },
     {
-      color: (secretColor2.id = colorsArray[Math.floor(Math.random() * 6)]),
+      color: colorsArray[Math.floor(Math.random() * 6)],
       found: false,
     },
     {
-      color: (secretColor3.id = colorsArray[Math.floor(Math.random() * 6)]),
+      color: colorsArray[Math.floor(Math.random() * 6)],
       found: false,
     },
     {
-      color: (secretColor4.id = colorsArray[Math.floor(Math.random() * 6)]),
+      color: colorsArray[Math.floor(Math.random() * 6)],
       found: false,
     }
   );
@@ -306,3 +300,5 @@ colors.forEach((colors) =>
     makeActiveDot();
   })
 );
+
+console.log(secretColorArray);
